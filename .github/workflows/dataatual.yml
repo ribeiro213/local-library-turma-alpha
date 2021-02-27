@@ -20,7 +20,7 @@ jobs:
        - run: date
         
   job_3:
-  name: MacOS
+    name: MacOS
     runs-on: macOS-latest
     steps:
        - run: date
@@ -29,7 +29,7 @@ jobs:
   name: Jobs Final 
     runs-on: windows-latest
     needs: [job_1, job_2, job_3]
-      steps:
+    steps:
       - run: echo 'Final'
 
       
