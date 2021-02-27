@@ -27,7 +27,6 @@ jobs:
 
   job_4:  
   name: Jobs Final
-    run: |
     needs: [job_1, job_2, job_3]
     steps:
       - run: echo 'Final'
