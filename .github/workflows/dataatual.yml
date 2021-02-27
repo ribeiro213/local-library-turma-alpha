@@ -9,24 +9,24 @@ branches: [ main ]
 jobs:
   job_1:
   runs-on: ubuntu-latest
-     name: Ubuntu
+   name: Ubuntu
     steps:
      - run: date
 
   job_2:
   runs-on: Windows-latest
-     name: Windows
+   name: Windows
     steps:
      - run: date
         
   job_3:
-    runs-on: macOS-latest
-        name: MacOS
+  runs-on: macOS-latest
+    name: MacOS
     steps:
     - run: date
 
   job_4:  
-    name: Jobs Final 
+  name: Jobs Final 
     runs-on: windows-latest
     needs: [job_1, job_2, job_3]
     steps:
