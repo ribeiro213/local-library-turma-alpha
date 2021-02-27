@@ -16,4 +16,4 @@ steps:
 
 env:
   NOME_ARTEFATO: REPO
-      name: ${{ env.NOME_ARTEFATO }}
+  path: to
