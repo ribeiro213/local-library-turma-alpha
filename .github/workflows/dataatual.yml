@@ -3,31 +3,31 @@ name: Data Atual
 
 on: [push]
  
-branches: [ main ]
+branches: [main]
 
 
 jobs:
   job_1:
+   name: Ubuntu
    runs-on: ubuntu-latest
    steps:
-      name: Ubuntu
      - run: date
 
   job_2:
+    name: Windows
     runs-on: Windows-latest
     steps:
-       name: Windows
        - run: date
         
   job_3:
+  name: MacOS
     runs-on: macOS-latest
     steps:
-       name: MacOS
        - run: date
 
   job_4:  
+  name: Jobs Final 
     runs-on: windows-latest
-    name: Jobs Final 
     needs: [job_1, job_2, job_3]
       steps:
       - run: echo 'Final'
