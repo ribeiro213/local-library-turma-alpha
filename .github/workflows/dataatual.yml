@@ -1,6 +1,8 @@
 
 name: Data Atual
+
  on: [push]
+ 
   branches: [ main ]
 
 
