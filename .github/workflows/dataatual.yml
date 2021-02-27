@@ -1,9 +1,9 @@
 
 name: Data Atual
 
- on: [push]
+on: [push]
  
-  branches: [ main ]
+branches: [ main ]
 
 
 jobs:
