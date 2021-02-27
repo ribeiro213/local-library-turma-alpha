@@ -3,7 +3,7 @@ name: Data Atual
 
 on: [push]
  
-branches: [main]
+branches: [ main ]
 
 
 jobs:
