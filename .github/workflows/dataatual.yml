@@ -3,46 +3,36 @@ name: Data Atual
 
 on: [push]
 
-
-
-
 jobs:
-jobs1:
-  build_and_test:
+ jobs1:
+    name: Ubuntu
     runs-on: ubuntu-latest
     steps:
      - run: date
 
-name: Data Atual 
-
-on: [push]
-
-jobs:
 jobs2:
-  build_and_test:
-    runs-on: windows-latest
+   name: Windows
+  runs-on: windows-latest
     steps:
      - run: date
-    
-jobs:
+        
 jobs3:
-  build_and_test:
+    name: MacOS
     runs-on: macOS-latest
     steps:
      - run: date
 
-jobs:
 jobs4:
-  build_and_test:
-    runs-on: macOS-latest
+    name: Ubuntu
+    runs-on: ubuntu-latest
     steps:
      - run: date
      
-name: Final 
+jobs4:  
+    name: Jobs Final 
     runs-on: windows-latest
-    needs: [job1, job2, job3]
-  
-
-        run: Data Atual!!
+    needs: [jobs1, jobs2, jobs3]
+    steps:
+    - run: echo 'Final'
 
       
