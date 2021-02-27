@@ -8,26 +8,26 @@ branches: [ main ]
 
 jobs:
   job_1:
-  runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
    name: Ubuntu
     steps:
      - run: date
 
   job_2:
-  runs-on: Windows-latest
-   name: Windows
-    steps:
+    runs-on: Windows-latest
+    name: Windows
+     steps:
      - run: date
         
   job_3:
-  runs-on: macOS-latest
+    runs-on: macOS-latest
     name: MacOS
-    steps:
-    - run: date
+     steps:
+     - run: date
 
   job_4:  
-  name: Jobs Final 
     runs-on: windows-latest
+    name: Jobs Final 
     needs: [job_1, job_2, job_3]
     steps:
      - run: echo 'Final'
