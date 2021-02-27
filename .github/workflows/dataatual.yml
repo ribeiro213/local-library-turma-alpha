@@ -1,39 +1,33 @@
 
 name: Data Atual
-on: [push]
-branches: [ main ]
-build_and_test:
+ on: [push]
+  branches: [ main ]
+
 
 jobs:
- jobs1:
-    name: Ubuntu
+  job_1:
     runs-on: ubuntu-latest
+        name: Ubuntu
     steps:
      - run: date
 
- jobs2:
-   name: Windows
+  job_2:
   runs-on: Windows-latest
+     name: Windows
     steps:
-    - run: date
+     - run: date
         
- jobs3:
-    name: MacOS
+  job_3:
     runs-on: macOS-latest
+        name: MacOS
     steps:
     - run: date
 
- jobs4:
-    name: Ubuntu
-    runs-on: ubuntu-latest
-    steps:
-    - run: date
-     
-jobs4:  
+  job_4:  
     name: Jobs Final 
     runs-on: windows-latest
-    needs: [jobs1, jobs2, jobs3]
+    needs: [job_1, job_2, job_3]
     steps:
-    - run: echo 'Final'
+     - run: echo 'Final'
 
       
