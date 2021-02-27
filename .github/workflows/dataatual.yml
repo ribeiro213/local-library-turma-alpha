@@ -27,6 +27,7 @@ jobs:
 
   job_4:  
     name: Jobs Final
+    runs-on: Windows-latest
     needs: [job_1, job_2, job_3]
     steps:
       - run: echo 'Final'
