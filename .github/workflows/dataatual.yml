@@ -11,7 +11,7 @@ jobs:
    runs-on: ubuntu-latest
    name: Ubuntu
     steps:
-     - run: date
+    - run: date
 
   job_2:
     runs-on: Windows-latest
