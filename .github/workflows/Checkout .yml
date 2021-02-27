@@ -16,5 +16,4 @@ steps:
 
 env:
   NOME_ARTEFATO: REPO
-      - name: Chek
       name: ${{ env.NOME_ARTEFATO }}
