@@ -8,8 +8,8 @@ branches: [ main ]
 
 jobs:
   job_1:
-    runs-on: ubuntu-latest
-        name: Ubuntu
+  runs-on: ubuntu-latest
+     name: Ubuntu
     steps:
      - run: date
 
