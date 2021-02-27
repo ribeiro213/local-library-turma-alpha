@@ -1,0 +1,20 @@
+name: Chekout
+
+on:
+  push: {branches: main}
+  pull_request: {branches: main}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Check Via Action
+    steps:
+
+steps:
+      - uses: actions/checkout@v2
+      with:
+
+env:
+  NOME_ARTEFATO: REPO
+      - name: Chek
+      name: ${{ env.NOME_ARTEFATO }}
