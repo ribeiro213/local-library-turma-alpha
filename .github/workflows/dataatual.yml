@@ -2,9 +2,6 @@
 name: Data Atual
 
 on: [push]
- 
-branches: [ main ]
-
 
 jobs:
   job_1:
