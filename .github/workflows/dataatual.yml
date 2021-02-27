@@ -1,7 +1,8 @@
 
 name: Data Atual
-
 on: [push]
+branches: [ main ]
+build_and_test:
 
 jobs:
  jobs1:
@@ -10,23 +11,23 @@ jobs:
     steps:
      - run: date
 
-jobs2:
+ jobs2:
    name: Windows
-  runs-on: windows-latest
+  runs-on: Windows-latest
     steps:
-     - run: date
+    - run: date
         
-jobs3:
+ jobs3:
     name: MacOS
     runs-on: macOS-latest
     steps:
-     - run: date
+    - run: date
 
-jobs4:
+ jobs4:
     name: Ubuntu
     runs-on: ubuntu-latest
     steps:
-     - run: date
+    - run: date
      
 jobs4:  
     name: Jobs Final 
