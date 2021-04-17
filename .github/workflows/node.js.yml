@@ -72,10 +72,9 @@ jobs:
           VALIDATE_MARKDOWN: true
           JAVASCRIPT_DEFAULT_STYLE: prettier
   
-  
-  deploy: Deploy-Homologacao
+  deploy: Deploy Homologacao
     runs-on: ubuntu-latest
-    env:
+     env:
       DB_URI: $${{ secrets.DB_URI }}
       NODE_ENV: production
       
@@ -104,7 +103,7 @@ jobs:
           heroku config:set MONGODB_URI=${{ secrets.BD_KEY }}
       
         
-  deploy: Deploy-Producao
+  deploy: Deploy Producao
     runs-on: ubuntu-latest
      env:
       DB_URI: $${{ secrets.DB_URI }}
