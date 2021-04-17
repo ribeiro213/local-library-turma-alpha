@@ -90,7 +90,7 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.10.9 # This is the action
         with:
           heroku_api_key: ${{secrets.KEY_HEROKU}}
-          heroku_app_name: devopslab-ivan
+          heroku_app_name: myapp-final
           heroku_email: 72061103@mackenzista.com.br
           justlogin: true
       
@@ -121,7 +121,7 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.10.9 # This is the action
         with:
           heroku_api_key: ${{secrets.KEY_HEROKU}}
-          heroku_app_name:  devopslab-ivan
+          heroku_app_name:  myapp-final
           heroku_email: 72061103@mackenzista.com.br
           justlogin: true
       
