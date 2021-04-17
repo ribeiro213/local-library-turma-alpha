@@ -72,7 +72,7 @@ jobs:
           VALIDATE_MARKDOWN: true
           JAVASCRIPT_DEFAULT_STYLE: prettier
   
-  deploy: Deploy Homologacao
+   deploy: Deploy Homologacao
     runs-on: ubuntu-latest
      env:
       DB_URI: $${{ secrets.DB_URI }}
