@@ -105,7 +105,7 @@ jobs:
         
   deploy: Deploy Producao
   runs-on: ubuntu-latest
-     env:
+  env:
       DB_URI: $${{ secrets.DB_URI }}
       NODE_ENV: production
       
