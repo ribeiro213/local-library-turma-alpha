@@ -78,7 +78,7 @@ jobs:
       DB_URI: $${{ secrets.DB_URI }}
       NODE_ENV: production
       
-    needs: [build, linter]
+ needs: [build, linter]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
