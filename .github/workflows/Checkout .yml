@@ -9,7 +9,7 @@ on:
 jobs:
    runs-on: ubuntu-latest
    name: Check Via Action
-    steps:
+   steps:
       - uses: actions/checkout@v2
        with: repository: ${{ github.repository }}
 
